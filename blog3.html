@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Top 10 Sneakers - UrbanSteps</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+<h1>UrbanSteps</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+</nav>
+</header>
+
+<section>
+<h2 class="title">Formal Shoes Styling Guide
+</h2>
+
+<img src="https://images.unsplash.com/photo-1588361861040-ac9b1018f6d5" style="width:60%;display:block;margin:auto;border-radius:20px;">
+
+<p style="max-width:800px;margin:40px auto;text-align:center;">
+<strong>Author:</strong> Admin <br>
+<strong>Date:</strong> 10 Feb 2026
+</p>
+
+<p style="max-width:800px;margin:auto;text-align:center;">
+College sneakers must be comfortable, lightweight and stylish.
+Choose breathable mesh, cushioned soles and versatile color options.
+UrbanSteps sneakers are perfect for campus lifestyle.
+</p>
+</section>
+<div style="text-align:center; margin-top:50px;">
+<a href="https://urbanstepsfashion.blogspot.com/2026/02/formal-shoes-styling-guide-for-men.html" class="btn">Read More</a>
+</div>
+
+
+<!-- COMMENT SECTION -->
+<section>
+<h2 class="title">Leave a Comment</h2>
+
+<form id="commentForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<textarea id="comment" placeholder="Your Comment" required></textarea>
+<button type="submit" class="btn">Post Comment</button>
+</form>
+
+<div id="commentList" style="max-width:600px;margin:40px auto;"></div>
+
+</section>
+
+<script>
+document.getElementById("commentForm").addEventListener("submit", function(e){
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let comment = document.getElementById("comment").value;
+
+let commentBox = document.createElement("div");
+commentBox.style.background="rgba(255,255,255,0.05)";
+commentBox.style.padding="15px";
+commentBox.style.marginBottom="15px";
+commentBox.style.borderRadius="10px";
+
+commentBox.innerHTML = "<strong>"+name+"</strong><p>"+comment+"</p>";
+
+document.getElementById("commentList").appendChild(commentBox);
+
+document.getElementById("commentForm").reset();
+});
+</script>
+
+
+<footer class="business-footer">
+
+<div class="footer-container">
+
+<div class="footer-box">
+<h3>UrbanSteps</h3>
+<p>Premium quality sneakers and footwear designed for comfort, style and performance.</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="affiliate.html">Affiliate</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="footer-box">
+<h3>Contact</h3>
+<p>Email: 
+<a href="mailto:Saahilshaikh24267@gmail.com" style="color:#ff7b00;">
+Sahilshaikh24267@gmail.com
+</a>
+</p>
+
+<p>Phone: +91 8849469927</p>
+</div>
+
+<div class="footer-box">
+<h3>Follow Us</h3>
+<div class="social-icons">
+<a href="https://www.facebook.com/share/1Dy49BzTfN/" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://instagram.com/sahilshaikh_24267" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://twitter.com/" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+
+<a href="https://youtube.com/@SahilShaikh-ih5em" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 UrbanSteps | All Rights Reserved
+</div>
+
+</footer>
+
+
+
+</body>
+</html>
